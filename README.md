@@ -6,10 +6,9 @@
 ## Objective:
 
 By the end of the lesson, students will be able to...
-
-	- Demonstrate a use case that explains prototypal inheritance
-	- Demonstrate what kind of flexibility prototypal inheritance gives
-	programmers
+- Demonstrate a use case that explains prototypal inheritance
+- Demonstrate what kind of flexibility prototypal inheritance gives
+programmers
 
 ## Opening:
 
@@ -111,8 +110,6 @@ User.prototype.welcome = function() {
 
 function Admin(email, accessLevel) {
   User.call(this, email);
-  //Admin.prototype.constructor = Admin
-
   this.accessLevel = accessLevel;
 }
 Admin.prototype = Object.create(User.prototype);
