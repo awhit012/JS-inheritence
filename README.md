@@ -6,6 +6,7 @@
 ## Objective:
 
 By the end of the lesson, students will be able to...
+
 	- Demonstrate a use case that explains prototypal inheritance
 	- Demonstrate what kind of flexibility prototypal inheritance gives
 	programmers
