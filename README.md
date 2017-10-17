@@ -39,6 +39,7 @@ programmers
 
 ## Demo 1: 
 Creating an instance of a class/prototype
+
 **Ruby**:
 ```ruby
 class User
