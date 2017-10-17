@@ -40,15 +40,15 @@ Creating an instance of a class/prototype
 **Ruby**:
 ```ruby
 class User
-	attr_reader :email
-	def initialize(email)
-		@email = email
-	end
+  attr_reader :email
+  def initialize(email)
+    @email = email
+  end
 
-	def welcome
-	  # functionality to send a welcome email:
-	  p 'sending welcome email to ' + self.email
-	end
+  def welcome
+    # functionality to send a welcome email:
+    p 'sending welcome email to ' + self.email
+  end
 end
 
 me = User.new("me@me.com")
@@ -79,22 +79,22 @@ me.welcome();
 **Ruby**:
 ```ruby
 class User
-	attr_reader :email
-	def initialize(email)
-		@email = email
-	end
+  attr_reader :email
+  def initialize(email)
+    @email = email
+  end
 
-	def welcome
-	  # functionality to send a welcome email:
-	  p 'sending welcome email to ' + self.email
-	end
+  def welcome
+    # functionality to send a welcome email:
+    p 'sending welcome email to ' + self.email
+  end
 end
 
 class Admin < User
-	def email_all_users
-		# functionality to email all users
-		p "emailing all users"
-	end
+  def email_all_users
+    # functionality to email all users
+    p "emailing all users"
+  end
 end
 
 me = Admin.new("me@me.com")
