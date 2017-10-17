@@ -57,18 +57,23 @@ me.welcome
 ```
 **JavaScript**:
 ```js
-function User(email) {
-  this.email = email;
-};
-
-User.prototype.welcome = function() {
-	//functionality to send a welcome email:
-	console.log('sending welcome email to ' + this.email);
+class User {
+  constructor (email) {
+    this.email = email;
+  }
+  
+  welcome () {
+    //functionality to send a welcome email:
+    console.log('sending welcome email to ' + this.email);
+  }
 };
 
 me = new User("me@me.com");
+// User { email: 'me@me.com' }
 me.email;
+// 'me@me.com'
 me.welcome();
+// sending welcome email to me@me.com
 ```
 ## Demo 2: Inheritence
 **Ruby**:
@@ -98,31 +103,36 @@ me.email_all_users
 ```
 **JS**:
 ```js
-function User(email) {
-  this.email = email;
+class User {
+  constructor (email) {
+    this.email = email;
+  }
+  
+  welcome () {
+    //functionality to send a welcome email:
+    console.log('sending welcome email to ' + this.email);
+  }
 };
 
-User.prototype.welcome = function() {
-	//functionality to send a welcome email:
-	console.log('sending welcome email to ' + this.email);
-};
+class Admin extends User {
+  constructor (email, accessLevel) {
+    super(email);
+    this.accessLevel = accessLevel;
+  }
 
-function Admin(email, accessLevel) {
-  User.call(this, email);
-  this.accessLevel = accessLevel;
-}
-
-Admin.prototype = Object.create(User.prototype);
-Admin.prototype.constructor = Admin;
-
-Admin.prototype.emailAllUsers = function() {
-	// functionality to email all users
-	console.log('emailing all users');
+  emailAllUsers () {
+    // functionality to email all users
+    console.log('emailing all users');	
+  }
 }
 
 me = new Admin("me@me.com", 5);
+// Admin { email: 'me@me.com', accessLevel: 5 }
 me.emailAllUsers();
+// emailing all users
 me.welcome();
+// sending welcome email to me@me.com
+
 ```
 
 ## Differences Behind the Scenes:
