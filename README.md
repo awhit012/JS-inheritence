@@ -77,8 +77,8 @@ me.email
 me.welcome();
 ```
 ## Demo 2: Inheriting one object from another
+**Ruby**
 ```ruby
-ruby code:
 class User
 	def initialize(email)
 		@email = email
