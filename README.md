@@ -13,7 +13,7 @@ programmers
 ## Opening:
 
 ### We are going to talk about JS Prototypal inheritence 
- - why we need to know about it
+ - why?
  - go over some vocab
  - see a demo of it in Ruby and JS using a real world example
  - discuss what the differences are
