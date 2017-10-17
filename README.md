@@ -32,9 +32,13 @@ programmers
 
 ## Vocab:
 **prototype**: an object that is used as a template to make other objects.
+
 **inheritance**: giving the stuff of the parents to the kids
+
 **OOP**: a programming pattern that models objects with attributes and functionality.
+
 **Class**: a platonic 'essence' of something
+
 **Constructor**: A function that is used as a prototype object. It creates new objects like itself.
 
 ## Demo 1: 
