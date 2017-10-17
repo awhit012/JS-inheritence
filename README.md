@@ -142,14 +142,12 @@ me.welcome();
 - This chaining lookup allows you to change an object after it is created by changing it's parent's prototype. 
 
 
-Review:
+## Review:
 
 1. You can do inheritance, like in Ruby, but a little bit different. 
-2. Instead of classes, everything is an object, so objects inherit from other objects, or "prototype" objects known as Constructors 
-2. Instead of inherited objects copying the functionality of their parent over to them, in JS the child object is linked to its parent. It just references the parent in order to satify the behavior
-3. The place where we store functions is in a sub-object on the parent called .prototype
-4. the JS engine goes 'up the chain' to check for inherited methods/ attributes
-5. You will be taking advantage of inheritance all of the time while using JS, taking advantage of it's power just by using JavaScript, but rarely will you need to implement inheritence yourself in your codebase. 
+2. Instead of classes, everything is an object, so objects inherit from "prototype" objects known as Constructors 
+4. the JS engine looks 'up the chain' to check for inherited methods/ attributes, rather than the object copying everything into itself
+5. You will be taking advantage of the power of inheritance just by using JavaScript, but rarely will you need to implement inheritence yourself in your codebase. 
 
 
 
