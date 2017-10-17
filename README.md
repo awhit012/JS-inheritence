@@ -73,7 +73,7 @@ me.email
 me.welcome();
 ```
 ## Demo 2: Inheriting one object from another
-**Ruby**
+**Ruby**:
 ```ruby
 class User
 	attr_reader :email
