@@ -67,7 +67,7 @@ User.prototype.welcome = function() {
 };
 
 me = new User("me@me.com");
-me.email
+me.email;
 me.welcome();
 ```
 ## Demo 2: Inheritence
@@ -111,8 +111,9 @@ function Admin(email, accessLevel) {
   User.call(this, email);
   this.accessLevel = accessLevel;
 }
+
 Admin.prototype = Object.create(User.prototype);
-Admin.prototype.constructor = Admin
+Admin.prototype.constructor = Admin;
 
 Admin.prototype.emailAllUsers = function() {
 	// functionality to email all users
@@ -129,9 +130,9 @@ me.welcome();
 
 **JS**: Pure objects
 
-**Ruby**: copies functionality into child object
+**Ruby**: Copies functionality of parent class into child object
 
-**JS**: Links to functionality by chaining object-prototypes
+**JS**: Links to functionality of parent object by looking 'up the chain' of inherited Constructors
 
 ### Disclaimer 2:
 - This chaining lookup allows you to change an object after it is created by changing it's parent's prototype. 
