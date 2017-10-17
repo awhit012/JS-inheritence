@@ -22,10 +22,7 @@ programmers
 
 ## Why - do we need to know?
 - We make use of inheritance anytime we use JS! We should know what is going on behind the scenes.
-
-## Why - is it even a thing?
-- code reuse 
-- code organization
+- We may want to implement inheritence ourselves in our code.
 
 ## Disclaimer:
 - It isn't common to need to implement inheritence in small to medium sized projects. Use only when it REALLY makes sense. Forcing data into inheritence patterns will create a bad situation.
@@ -33,9 +30,9 @@ programmers
 ## Vocab:
 **prototype**: an object that is used as a template to make other objects.
 
-**inheritance**: giving the stuff of the parents to the kids
+**inheritance**: giving the stuff of the parent to the kids. There is only one parent in inheritence in computer science.
 
-**Constructor**: A function that is used as a prototype object. It creates new objects like itself.
+**constructor**: A function that is used as a prototype object. It creates new objects like itself.
 
 ## Demo 1: 
 Creating an instance of a class/prototype
@@ -73,7 +70,7 @@ me = new User("me@me.com");
 me.email
 me.welcome();
 ```
-## Demo 2: Inheriting one object from another
+## Demo 2: Inheritence
 **Ruby**:
 ```ruby
 class User
@@ -115,6 +112,7 @@ function Admin(email, accessLevel) {
   this.accessLevel = accessLevel;
 }
 Admin.prototype = Object.create(User.prototype);
+Admin.prototype.constructor = Admin
 
 Admin.prototype.emailAllUsers = function() {
 	// functionality to email all users
