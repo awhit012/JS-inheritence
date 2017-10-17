@@ -21,7 +21,7 @@ programmers
 
 
 ## Why - do we need to know?
-- We make use of inheritance just by using JS and should know what is going on
+- We make use of inheritance anytime we use JS! We should know what is going on behind the scenes.
 
 ## Why - is it even a thing?
 - code reuse 
