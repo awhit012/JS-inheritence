@@ -138,7 +138,7 @@ me.welcome();
 
 **JS**: Links to functionality by chaining object-prototypes
 
-## Disclaimer 2:
+### Disclaimer 2:
 - This chaining lookup allows you to change an object after it is created by changing it's parent's prototype. 
 
 
