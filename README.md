@@ -39,7 +39,7 @@ programmers
 
 ## Demo 1: 
 Creating an instance of a class/prototype
-ruby code:
+**Ruby**:
 ```ruby
 class User
 	attr_reader :email
@@ -57,7 +57,7 @@ me = User.new("me@me.com")
 me.email
 me.welcome
 ```
-js code:
+**JavaScript**:
 ```js
 function User(email) {
   this.email = email;
