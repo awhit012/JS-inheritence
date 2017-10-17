@@ -102,7 +102,7 @@ me = Admin.new("me@me.com")
 me.welcome
 me.email_all_users
 ```
-JS code:
+**JS**:
 ```js
 function User(email) {
   this.email = email;
@@ -131,9 +131,11 @@ me.welcome();
 
 ## Differences Behind the Scenes:
 **Ruby**: Class based
+
 **JS**: Pure objects
 
 **Ruby**: copies functionality into child object
+
 **JS**: Links to functionality by chaining object-prototypes
 
 ## Disclaimer 2:
